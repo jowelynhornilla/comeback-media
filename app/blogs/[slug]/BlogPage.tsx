@@ -5,10 +5,9 @@ import {
   Conclusion,
   Divider,
   Heading,
-  PageProgress,
   Paragraph,
   ParagraphHeading,
-  Quote,
+  Quote
 } from "@/app/components";
 import { BLOG_BODY_COMPONENT_SPACING_MAP } from "@/app/config";
 import { usePageProgress } from "@/app/hooks/usePageProgress";
