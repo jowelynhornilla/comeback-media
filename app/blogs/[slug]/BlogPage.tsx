@@ -30,6 +30,7 @@ export const BlogPage = ({
 
   useEffect(() => {
     onProgressChange?.(progress);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [progress]);
 
   return (

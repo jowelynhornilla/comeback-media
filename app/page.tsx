@@ -10,6 +10,7 @@ export default function Home() {
         {mockBlogs.map((blog, index) => {
           return (
             <Link
+              key={index}
               href={`/blogs/${blog.slug}`}
               className="flex h-48 shadow-lg hover:shadow-xl transition-all ease-in-out cursor-pointer"
             >
