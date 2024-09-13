@@ -5,13 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --paragraph-max-width: 720px;
 }
 
 body {
@@ -24,4 +18,60 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .typography-display-2xl {
+    @apply text-7xl leading-[5.625rem];
+    letter-spacing: calc(4.5rem * -.02);
+  }
+
+  .typography-display-xl {
+    @apply text-6xl leading-[4.5rem];
+    letter-spacing: calc(3.75rem * -.02);
+  }
+
+  .typography-display-lg {
+    @apply text-5xl leading-[3.75rem];
+    letter-spacing: calc(3rem * -.02);
+  }
+
+  .typography-display-md {
+    @apply text-4xl leading-[2.75rem];
+    letter-spacing: calc(2.25rem * -.02);
+  }
+
+  .typography-display-sm {
+    @apply text-3xl leading-[2.375rem];
+    letter-spacing: calc(1.875rem * -.02);
+  }
+
+  .typography-display-xs {
+    @apply text-2xl leading-9;
+  }
+
+  .typography-xl {
+    @apply text-xl leading-8;
+  }
+
+  .typography-lg {
+    @apply text-lg leading-7;
+  }
+
+  .typography-md {
+    @apply text-base leading-6;
+  }
+
+  .typography-sm {
+    @apply text-sm leading-5;
+  }
+
+  .typography-xs {
+    @apply text-xs leading-4;
+  }
+
+  .paragraph-max-width {
+    @apply max-w-[var(--paragraph-max-width)];
+  }
+
 }
